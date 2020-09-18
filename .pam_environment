@@ -1,0 +1,2 @@
+#WINEPREFIX	DEFAULT=/home/vodofrede/Wine/.wine
+#QT_QPA_PLATFORM	DEFAULT=wayland
