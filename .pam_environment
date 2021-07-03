@@ -1,3 +1,0 @@
-WINEPREFIX	DEFAULT=/home/vodofrede/Wine/.wine
-QT_STYLE_OVERRIDE DEFAULT=kvantum
-#QT_QPA_PLATFORM	DEFAULT=wayland

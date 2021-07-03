@@ -10,9 +10,5 @@ setopt COMPLETE_ALIASES
 # Prompt
 PROMPT="%F{red}%n@%m%f %~ %# "
 
-# Environment variables
-export TERM=xterm
-
 # Load other files
-source $HOME/.zsh_aliases
-
+alias ls="ls --color=auto -lah --group-directories-first"
