@@ -11,4 +11,5 @@ setopt COMPLETE_ALIASES
 PROMPT="%F{red}%n@%m%f %~ %# "
 
 # Load other files
-alias ls="ls --color=auto -lah --group-directories-first"
+source .zsh_aliases
+source .zsh_env

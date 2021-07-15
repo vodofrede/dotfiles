@@ -1,0 +1,2 @@
+WINEPREFIX=$HOME/.wine/wine
+WINEARCH=win64
