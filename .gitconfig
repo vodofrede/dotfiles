@@ -3,3 +3,5 @@
 	email = frederik@palmoe.dk
 [credential]
 	helper = store
+[core]
+	editor = nano

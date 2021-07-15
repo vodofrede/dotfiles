@@ -1,2 +1,6 @@
+# General
+EDITOR=nano
+
+# Wine
 WINEPREFIX=$HOME/.wine/wine
 WINEARCH=win64
