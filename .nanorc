@@ -1,9 +1,9 @@
 include /usr/share/nano/*.nanorc
 
-set smooth
+#set smooth
 set autoindent
-set morespace
+#set morespace
 set tabsize 4
-set mouse
+#set mouse
 set softwrap
 set constantshow
