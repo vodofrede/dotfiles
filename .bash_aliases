@@ -1,2 +1,2 @@
 alias ls="ls --color=auto -lah --group-directories-first"
-alias yay="yay --removemake --nocleanmenu --nodiffmenu"
+alias dotfiles="git --git-dir $HOME/.dotfiles --work-tree=$HOME"
