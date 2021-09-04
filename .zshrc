@@ -1,6 +1,6 @@
 # Load packages
 autoload -Uz compinit
-compinit
+compinit -D
 
 # Configuration
 zstyle ':completion:*' menu select
@@ -12,4 +12,3 @@ PROMPT="%F{red}%n@%m%f %~ %# "
 
 # Load other files
 source $HOME/.zsh_aliases
-source $HOME/.zsh_env
