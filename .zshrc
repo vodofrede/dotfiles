@@ -1,14 +1,19 @@
-# Load packages
+# Indlæs pakker til zsh
 autoload -Uz compinit
 compinit -D
 
-# Configuration
+# Generel konfiguration
 zstyle ':completion:*' menu select
 zstyle ':completion:complete:*' gain-privileges 1
 setopt COMPLETE_ALIASES
 
-# Prompt
 PROMPT="%F{red}%n@%m%f %~ %# "
 
-# Load other files
+# Indlæs andre filer
 source $HOME/.zsh_aliases
+
+# Brug tmux hvis tilgængelig
+if [ "$TMUX" = "" ]
+then
+	(tmux attach -t main || tmux new -s main) && exit
+fi
