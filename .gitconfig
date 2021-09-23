@@ -7,3 +7,5 @@
 	editor = nano
 [status]
 	showUntrackedFiles = no
+[init]
+	defaultBranch = main

@@ -13,7 +13,8 @@ PROMPT="%F{red}%n@%m%f %~ %# "
 source $HOME/.zsh_aliases
 
 # Brug tmux hvis tilgængelig
+SESSION="`pwd | sed -E \"s#($HOME)\\$#main#\"`"
 if [ "$TMUX" = "" ]
 then
-	(tmux attach -t main || tmux new -s main) && exit
+	(tmux attach -t $SESSION || tmux new -s $SESSION) && exit
 fi
