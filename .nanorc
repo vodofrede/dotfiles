@@ -4,6 +4,6 @@ include /usr/share/nano/*.nanorc
 set autoindent
 #set morespace
 set tabsize 4
-#set mouse
+set mouse
 set softwrap
 set constantshow
