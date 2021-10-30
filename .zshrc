@@ -7,7 +7,12 @@ zstyle ':completion:*' menu select
 zstyle ':completion:complete:*' gain-privileges 1
 setopt COMPLETE_ALIASES
 
-PROMPT="%F{red}%n@%m%f %~ %# "
+if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]
+then
+	PROMPT="%F{green}%n@%m%f %~ %# "
+else
+	PROMPT="%F{red}%n@%m%f %~ %# "
+fi
 
 # Indlæs andre filer
 source $HOME/.zsh_aliases
