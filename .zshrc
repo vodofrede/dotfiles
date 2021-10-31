@@ -1,25 +1,28 @@
-# Indlæs pakker til zsh
+# indlæs pakker
 autoload -Uz compinit
 compinit -D
 
-# Generel konfiguration
+# autofuldendelse
 zstyle ':completion:*' menu select
 zstyle ':completion:complete:*' gain-privileges 1
 setopt COMPLETE_ALIASES
 
-if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]
-then
-	PROMPT="%F{green}%n@%m%f %~ %# "
+# prompt
+if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
+	PROMPT="%F{green}%n@%m%f %~ > "
 else
-	PROMPT="%F{red}%n@%m%f %~ %# "
+	PROMPT="%F{red}%n@%m%f %~ > "
 fi
 
-# Indlæs andre filer
+# indlæs andre filer
 source $HOME/.zsh_aliases
 
-# Brug tmux hvis tilgængelig
-SESSION="`pwd | sed -E \"s#($HOME)\\$#main#\"`"
-if [ "$TMUX" = "" ]
-then
-	(tmux attach -t $SESSION || tmux new -s $SESSION) && exit
+# tmux
+if [ -z "$TMUX" ]; then
+    if [ "`pwd`" = "$HOME" ]; then
+        SESSION="home"
+    else
+        SESSION="`pwd`"
+    fi
+    (tmux attach -t "$SESSION" || tmux new -t "$SESSION") && exit
 fi
