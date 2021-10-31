@@ -9,3 +9,5 @@
 	showUntrackedFiles = no
 [init]
 	defaultBranch = main
+[pull]
+	rebase = false
