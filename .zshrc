@@ -15,7 +15,7 @@ else
 fi
 
 # indlæs andre filer
-source $HOME/.zsh_aliases
+source $HOME/.aliases
 
 # tmux
 if [ -z "$TMUX" ]; then
