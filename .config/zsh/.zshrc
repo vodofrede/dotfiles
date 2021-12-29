@@ -19,6 +19,9 @@ alias dotfiles="git --git-dir $HOME/.local/share/dotfiles --work-tree=$HOME"
 alias ls="LC_ALL=C ls -lAh --color=auto --no-group --group-directories-first --time-style=iso"
 alias fsharpc="dotnet build"
 alias fsharpi="dotnet fsi"
+alias zshrc="nano $HOME/.config/zsh/.zshrc && source $HOME/.config/zsh/.zshrc"
+alias grep="ripgrep"
+alias find="fd"
 
 # indlæs andre filer
 #source $HOME/.aliases
