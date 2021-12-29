@@ -1,9 +1,0 @@
-# generelt
-alias ls="LC_ALL=C ls -lAh --color=auto --no-group --group-directories-first --time-style=iso"
-alias dotfiles="git --git-dir $HOME/.local/share/dotfiles --work-tree=$HOME"
-
-# arch specifikt
-
-# pop
-alias fsharpc="dotnet build"
-alias fsharpi="dotnet fsi"

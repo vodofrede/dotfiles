@@ -2,7 +2,7 @@
 autoload -Uz compinit
 compinit -D
 
-# autofuldendelse
+# generelt
 zstyle ':completion:*' menu select
 zstyle ':completion:complete:*' gain-privileges 1
 setopt COMPLETE_ALIASES
@@ -14,8 +14,14 @@ else
 	PROMPT="%F{red}%n@%m%f %~ > "
 fi
 
+# aliaser
+alias dotfiles="git --git-dir $HOME/.local/share/dotfiles --work-tree=$HOME"
+alias ls="LC_ALL=C ls -lAh --color=auto --no-group --group-directories-first --ime-style=iso"
+alias fsharpc="dotnet build"
+alias fsharpi="dotnet fsi"
+
 # indlæs andre filer
-source $HOME/.aliases
+#source $HOME/.aliases
 
 # tmux
 if [ -z "$TMUX" ]; then
