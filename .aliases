@@ -1,11 +1,8 @@
 # generelt
-alias ls="LC_ALL=C ls --color=auto -lah --group-directories-first"
+alias ls="LC_ALL=C ls -lAh --color=auto --no-group --group-directories-first --time-style=iso"
 alias dotfiles="git --git-dir $HOME/.local/share/dotfiles --work-tree=$HOME"
 
 # arch specifikt
-if command -v yay &> /dev/null; then
-	alias yay="yay --removemake --nocleanmenu --nodiffmenu --batchinstall"
-fi
 
 # pop
 alias fsharpc="dotnet build"
