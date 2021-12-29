@@ -16,7 +16,7 @@ fi
 
 # aliaser
 alias dotfiles="git --git-dir $HOME/.local/share/dotfiles --work-tree=$HOME"
-alias ls="LC_ALL=C ls -lAh --color=auto --no-group --group-directories-first --ime-style=iso"
+alias ls="LC_ALL=C ls -lAh --color=auto --no-group --group-directories-first --time-style=iso"
 alias fsharpc="dotnet build"
 alias fsharpi="dotnet fsi"
 
