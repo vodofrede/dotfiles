@@ -10,17 +10,17 @@ set constantshow
 set nonewlines
  
 # key-bindings
-bind ^c copy main
-bind ^x cut main
-bind ^v paste main
-bind ^z undo main
-bind ^y redo main
-bind ^f whereis main
-bind ^q exit main
-bind ^s savefile main
-bind F5 refresh main
-bind ^h replace main
+#bind ^c copy main
+#bind ^x cut main
+#bind ^v paste main
+#bind ^z undo main
+#bind ^y redo main
+#bind ^f whereis main
+#bind ^q exit main
+#bind ^s savefile main
+#bind F5 refresh main
+#bind ^h replace main
 
-unbind ^u main
-unbind ^k main
-unbind ^o main
+#unbind ^u main
+#unbind ^k main
+#unbind ^o main
