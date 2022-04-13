@@ -1,11 +1,23 @@
-# indlæs pakker
+# auto-completion
 autoload -Uz compinit
 compinit -D
+_comp_options+=(globdots)
 
 # generelt
-zstyle ':completion:*' menu select
-zstyle ':completion:complete:*' gain-privileges 1
+zstyle ":completion:*" menu select
+zstyle ":completion:complete:*" gain-privileges 1
 setopt COMPLETE_ALIASES
+
+# key-bindings
+bindkey "^[[3~" delete-char # delete
+bindkey "^[[1~" beginning-of-line # home
+bindkey "^[[4~" end-of-line # end
+
+bindkey "^H" backward-kill-word # ctrl-backspace
+bindkey "^[[3;5~" kill-word # ctrl-delete
+
+bindkey "\e[1;5D" backward-word # ctrl-left
+bindkey "\e[1;5C" forward-word # ctrl-right
 
 # prompt
 if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
@@ -20,7 +32,7 @@ alias ls="LC_ALL=C ls -lAh --color=auto --no-group --group-directories-first --t
 alias fsharpc="dotnet build"
 alias fsharpi="dotnet fsi"
 alias zshrc="nano $HOME/.config/zsh/.zshrc && source $HOME/.config/zsh/.zshrc"
-alias grep="ripgrep"
+alias grep="rg"
 alias find="fd"
 
 # indlæs andre filer
