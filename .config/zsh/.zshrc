@@ -42,8 +42,6 @@ alias find="fd"
 if [ -z "$TMUX" ]; then
     if [ "`pwd`" = "$HOME" ]; then
         SESSION="home"
-    else
-        SESSION="`pwd`"
+        (tmux attach -t "$SESSION" || tmux new -t "$SESSION") && exit
     fi
-    (tmux attach -t "$SESSION" || tmux new -t "$SESSION") && exit
 fi
