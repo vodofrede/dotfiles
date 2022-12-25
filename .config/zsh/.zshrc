@@ -3,7 +3,6 @@ autoload -Uz compinit
 compinit -D
 _comp_options+=(globdots)
 
-# generelt
 zstyle ":completion:*" menu select
 zstyle ":completion:complete:*" gain-privileges 1
 setopt COMPLETE_ALIASES
@@ -26,15 +25,18 @@ else
 	PROMPT="%F{red}%n@%m%f %~ > "
 fi
 
-# aliaser
+# aliases
 alias dotfiles="git --git-dir $HOME/.local/share/dotfiles --work-tree=$HOME"
 alias ls="LC_ALL=C ls -lAh --color=auto --no-group --group-directories-first --time-style=iso"
 alias zshrc="nano $HOME/.config/zsh/.zshrc && source $HOME/.config/zsh/.zshrc"
 alias grep="rg"
 alias find="fd"
 
-# indlæs andre filer
+# other files
 #source $HOME/.aliases
+
+# path
+PATH=$PATH:$HOME/.local/bin
 
 # tmux
 if [ -z "$TMUX" ]; then
