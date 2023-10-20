@@ -37,9 +37,9 @@ alias zshrc="nano $HOME/.config/zsh/.zshrc && source $HOME/.config/zsh/.zshrc"
 PATH=$PATH:$HOME/.local/bin
 
 # tmux
-if [ -z "$TMUX" ]; then
-    if [ "`pwd`" = "$HOME" ]; then
-        SESSION="home"
-        (tmux attach -t "$SESSION" || tmux new -t "$SESSION") && exit
-    fi
-fi
+#if [ -z "$TMUX" ]; then
+#    if [ "`pwd`" = "$HOME" ]; then
+#        SESSION="home"
+#        (tmux attach -t "$SESSION" || tmux new -t "$SESSION") && exit
+#    fi
+#fi
