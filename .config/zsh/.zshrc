@@ -29,6 +29,7 @@ fi
 alias dotfiles="git --git-dir $HOME/.local/share/dotfiles --work-tree=$HOME"
 alias ls="LC_ALL=C ls -lAh --color=auto --no-group --group-directories-first --time-style=iso"
 alias zshrc="nano $HOME/.config/zsh/.zshrc && source $HOME/.config/zsh/.zshrc"
+alias edit="gnome-text-editor"
 
 # other files
 #source $HOME/.aliases
