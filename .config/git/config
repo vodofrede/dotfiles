@@ -12,5 +12,3 @@
 	rebase = false
 [protocol "file"]
 	allow = always
-[credential]
-	helper = store
