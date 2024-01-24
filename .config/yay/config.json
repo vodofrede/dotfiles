@@ -2,5 +2,6 @@
     "editmenu": false,
     "cleanmenu": false,
     "diffmenu": false,
-    "useask": false
+    "useask": false,
+    "batchinstall": true
 }
