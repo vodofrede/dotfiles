@@ -4,5 +4,5 @@
     "diffmenu": false,
     "useask": false,
     "batchinstall": true,
-    "removemake": true,
+    "removemake": "yes"
 }
