@@ -3,5 +3,6 @@
     "cleanmenu": false,
     "diffmenu": false,
     "useask": false,
-    "batchinstall": true
+    "batchinstall": true,
+    "removemake": true,
 }
