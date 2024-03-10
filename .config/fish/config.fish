@@ -7,4 +7,5 @@ if status is-interactive
 
     # ctrl-backspace ctrl-del
     bind \cH backward-kill-word
+    bind \e\[3\;5~ kill-word
 end
