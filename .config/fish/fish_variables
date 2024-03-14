@@ -1,11 +1,17 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export CARGO_HOME:/home/vodofrede/\x2elocal/share/cargo
+SETUVAR --export DOTNET_CLI_HOME:/home/vodofrede/\x2elocal/share/dotnet
+SETUVAR --export GHCUP_USE_XDG_DIRS:true
+SETUVAR --export --path JULIA_DEPOT_PATH:/home/vodofrede/\x2elocal/share/julia\x1e
+SETUVAR --export NPM_CONFIG_USERCONFIG:/home/vodofrede/\x2econfig/npm/npmrc
 SETUVAR --export RUSTUP_HOME:/home/vodofrede/\x2elocal/share/rustup
+SETUVAR --export SML_LIB:/usr/lib/mlkit
 SETUVAR --export XDG_CACHE_HOME:/home/vodofrede/\x2ecache
 SETUVAR --export XDG_CONFIG_HOME:/home/vodofrede/\x2econfig
 SETUVAR --export XDG_DATA_HOME:/home/vodofrede/\x2elocal/share
 SETUVAR --export XDG_STATE_HOME:/home/vodofrede/\x2elocal/state
+SETUVAR --export _JAVA_OPTIONS:\x2dDjava\x2eutil\x2eprefs\x2euserRoot\x3d/home/vodofrede/\x2econfig/java
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:4D5566
 SETUVAR fish_color_cancel:\x2d\x2dreverse
@@ -47,4 +53,4 @@ SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
 SETUVAR fish_prompt_pwd_dir_length:0\x2e
-SETUVAR fish_user_paths:/home/vodofrede/\x2elocal/bin
+SETUVAR fish_user_paths:/home/vodofrede/Projekter/mlkit/bin\x1e/home/vodofrede/\x2elocal/bin
