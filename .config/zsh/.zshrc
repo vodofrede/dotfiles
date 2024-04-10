@@ -1,8 +1,3 @@
-# init
-autoload -Uz compinit
-compinit
-zstyle ':completion:*' menu select
-
 # prompt
 PROMPT="%F{green}%n%f@%m %F{cyan}%~%f %(?..%B%F{red}[%?]%f%b)> "
 
@@ -12,6 +7,11 @@ if [ "$SYSTEMDUSERENVLOADED" != 1 ]; then
         export $(envsubst < ${file})
     done
 fi
+
+# load packages
+autoload -Uz compinit
+compinit
+zstyle ':completion:*' menu select
 
 # aliases & functions
 alias ls="LC_ALL=C ls -Ah --color=auto --group-directories-first --time-style=iso"
