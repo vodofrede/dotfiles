@@ -1,9 +1,0 @@
-{
-    "editmenu": false,
-    "cleanmenu": false,
-    "diffmenu": false,
-    "useask": false,
-    "combinedupgrade": false,
-    "batchinstall": true,
-    "removemake": "yes"
-}
