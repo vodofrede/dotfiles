@@ -10,8 +10,10 @@ fi
 
 # load completion
 autoload -Uz compinit
-compinit
+compinit -D
+_comp_options+=(globdots)
 zstyle ':completion:*' menu select
+setopt COMPLETE_ALIASES
 
 # aliases & functions
 alias ls="LC_ALL=C ls -Ah --color=auto --group-directories-first --time-style=iso"
@@ -21,8 +23,10 @@ function edit() {
 }
 
 # keybinds
-bindkey '^[[3;5~' kill-word
-bindkey '^H' backward-kill-word
-bindkey '^[[1;5C' forward-word
-bindkey '^[[1;5D' backward-word
-
+bindkey '^[[3~' delete-char         # delete
+bindkey '^[[1~' beginning-of-line   # home
+bindkey '^[[4~' end-of-line         # end
+bindkey '^[[3;5~' kill-word         # ctrl-delete
+bindkey '^H' backward-kill-word     # ctrl-backspace
+bindkey '^[[1;5C' forward-word      # ctrl-right
+bindkey '^[[1;5D' backward-word     # ctrl-left
