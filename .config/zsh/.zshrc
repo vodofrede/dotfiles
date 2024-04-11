@@ -35,9 +35,8 @@ bindkey '^[[1;5C' forward-word      # ctrl-right
 bindkey '^[[1;5D' backward-word     # ctrl-left
 
 # load packages
-os_name=$(awk -F= '$1=="NAME" { print $2 ;}' /etc/os-release)
 plugin_dir="/usr/share"
-if [ os_name = "Arch Linux" ]; then
+if [ -d "/usr/share/zsh/plugins" ]; then
     plugin_dir="/usr/share/zsh/plugins"
 fi
 source ${plugin_dir}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
