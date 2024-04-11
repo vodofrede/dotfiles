@@ -33,3 +33,7 @@ bindkey '^[[3;5~' kill-word         # ctrl-delete
 bindkey '^H' backward-kill-word     # ctrl-backspace
 bindkey '^[[1;5C' forward-word      # ctrl-right
 bindkey '^[[1;5D' backward-word     # ctrl-left
+
+# packages
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
