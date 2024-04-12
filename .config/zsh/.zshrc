@@ -7,11 +7,9 @@ fi
 PROMPT="${host} %F{cyan}%~%f %(?..%B%F{red}[%?]%f%b)> "
 
 # load environment
-if [ "$SYSTEMDUSERENVLOADED" != 1 ]; then
-    for file in "$HOME"/.config/environment.d/*.conf; do
-        export $(envsubst < "$file")
-    done
-fi
+for file in "$HOME"/.config/environment.d/*.conf; do
+    export $(envsubst < "$file")
+done
 
 # load completion
 autoload -Uz compinit
