@@ -13,6 +13,12 @@ if [ "$SYSTEMDUSERENVLOADED" != 1 ]; then
     done
 fi
 
+# enable history
+HISTFILE="$HOME"/.config/zsh/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt SHARE_HISTORY
+
 # load completion
 autoload -Uz compinit
 compinit -D
