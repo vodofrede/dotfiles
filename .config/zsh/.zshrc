@@ -1,8 +1,12 @@
+# required packages (arch): zsh-autosuggestions zsh-syntax-highlighting
+# optional packages:        ripgrep fd bat
 # prompt
-if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
-	host="%F{green}%n%f@%m" # remote color
+if [ -n "$container" ]; then
+    host="%F{yellow}%n%f@%m"  # container
+elif [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
+	host="%F{green}%n%f@%m"   # remote
 else
-	host="%F{magenta}%n%f@%m" # local color
+	host="%F{magenta}%n%f@%m" # local
 fi
 PROMPT="${host} %F{cyan}%~%f %(?..%B%F{red}[%?]%f%b)> "
 
@@ -27,7 +31,9 @@ setopt COMPLETE_ALIASES
 # aliases & functions
 alias ls='LC_ALL=C ls -Ah --color=auto --group-directories-first --time-style=iso'
 alias dotfiles='git --git-dir $XDG_DATA_HOME/dotfiles --work-tree=$HOME'
-function edit() { (&> /dev/null gnome-text-editor "$1" &) }
+command -v rg > /dev/null && alias grep="rg"
+command -v fd > /dev/null && alias find="fd"
+command -v bat > /dev/null && alias cat="bat"
 
 # keybinds
 bindkey '^[[3~' delete-char         # delete
