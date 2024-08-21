@@ -38,7 +38,7 @@
 	"cleanmenu": true,
 	"diffmenu": true,
 	"editmenu": false,
-	"combinedupgrade": false,
+	"combinedupgrade": true,
 	"useask": false,
 	"batchinstall": false,
 	"singlelineresults": false,
