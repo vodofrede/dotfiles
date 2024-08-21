@@ -2,7 +2,7 @@
 	name = vodofrede
 	email = frederik@palmoe.dk
 [core]
-	editor = nano
+	editor = micro
 	autocrlf = input
 [status]
 	showUntrackedFiles = no
