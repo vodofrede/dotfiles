@@ -26,6 +26,7 @@ setopt SHARE_HISTORY
 autoload -Uz compinit
 compinit -D
 _comp_options+=(globdots)
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' menu select
 setopt COMPLETE_ALIASES
 
