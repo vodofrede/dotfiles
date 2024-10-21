@@ -12,5 +12,3 @@
 	rebase = false
 [protocol "file"]
 	allow = always
-[safe]
-	directory = /var/local/lib/quartz
