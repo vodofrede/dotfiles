@@ -1,0 +1,12 @@
+[
+    {
+        "context": "Workspace",
+        "bindings": {
+            "ctrl-r": "task::Spawn"
+        }
+    },
+    {
+        "context": "Editor",
+        "bindings": {}
+    }
+]
