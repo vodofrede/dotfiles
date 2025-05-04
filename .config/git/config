@@ -7,7 +7,7 @@
 [status]
 	showUntrackedFiles = no
 [init]
-	defaultBranch = trunk
+	defaultBranch = main
 [pull]
 	rebase = false
 [protocol "file"]
