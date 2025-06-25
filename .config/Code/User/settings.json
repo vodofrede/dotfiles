@@ -1,0 +1,25 @@
+{
+    // theme
+    "editor.fontFamily": "Adwaita Mono",
+    "editor.lineHeight": 1.1,
+    "window.autoDetectColorScheme": true,
+    "workbench.preferredDarkColorTheme": "Adwaita Dark",
+    "workbench.preferredLightColorTheme": "Adwaita Light",
+    // editor
+    "editor.codeLens": false,
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "editor.stickyScroll.enabled": false,
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "explorer.confirmDelete": false,
+    "chat.commandCenter.enabled": false,
+    "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+    "terminal.integrated.shellIntegration.enabled": false,
+    "terminal.integrated.env.linux": {
+        "ZDOTDIR": "/home/vodofrede/.config/zsh"
+    },
+    // extensions
+    "lldb.showDisassembly": "never",
+    "explorer.confirmPasteNative": false,
+    "explorer.confirmDragAndDrop": false,
+}

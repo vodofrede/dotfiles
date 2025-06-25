@@ -12,12 +12,24 @@
     "buffer_line_height": {
         "custom": 1.2
     },
-    "tabs": {
-        "file_icons": true
-    },
     // editor
     "tab_size": 4,
     "format_on_save": "on",
     "middle_click_paste": false,
-    "edit_predictions_disabled_in": ["comment", "string"]
+    "edit_predictions_disabled_in": ["comment", "string"],
+    "edit_predictions": {
+        "mode": "subtle"
+    },
+    // plugins
+    "lsp": {
+        "rust-analyzer": {
+            "initialization_options": {
+                "cargo": {
+                    "buildScripts": {
+                        "enable": true
+                    }
+                }
+            }
+        }
+    }
 }
