@@ -4,7 +4,6 @@
     "editor.lineHeight": 1.1,
     "window.autoDetectColorScheme": true,
     "workbench.preferredDarkColorTheme": "Adwaita Dark",
-    "workbench.preferredLightColorTheme": "Adwaita Light",
     // editor
     "editor.codeLens": false,
     "editor.formatOnSave": true,
@@ -18,8 +17,18 @@
     "terminal.integrated.env.linux": {
         "ZDOTDIR": "/home/vodofrede/.config/zsh"
     },
+    "editor.selectionClipboard": false,
+    "update.mode": "none",
     // extensions
+    "extensions.ignoreRecommendations": true,
     "lldb.showDisassembly": "never",
     "explorer.confirmPasteNative": false,
     "explorer.confirmDragAndDrop": false,
+    "editor.copyWithSyntaxHighlighting": false,
+    "workbench.startupEditor": "none",
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "claudeCodeChat.thinking.intensity": "ultrathink",
+    "workbench.preferredLightColorTheme": "Adwaita Light",
 }

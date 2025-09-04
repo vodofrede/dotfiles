@@ -1,3 +1,5 @@
 {
-    "colorscheme": "simple"
+    "colorscheme": "simple",
+    "lsp.formatOnSave": true,
+    "lsp.tabcompletion": true   
 }
