@@ -1,5 +1,19 @@
 {
     // window
+    "show_whitespaces": "trailing",
+    "ensure_final_newline_on_save": true,
+    "base_keymap": "VSCode",
+    "minimap": {
+        "show": "never"
+    },
+    "agent": {
+        "default_model": {
+            "provider": "zed.dev",
+            "model": "claude-sonnet-4-thinking"
+        },
+        "model_parameters": [],
+        "default_profile": "ask"
+    },
     "theme": {
         "mode": "system",
         "light": "Adwaita Pastel Light",
@@ -24,6 +38,10 @@
     "lsp": {
         "rust-analyzer": {
             "initialization_options": {
+                "check": {
+                    "command": "clippy",
+                    "args": ["-W", "clippy::all", "clippy::pedantic"]
+                },
                 "cargo": {
                     "buildScripts": {
                         "enable": true
