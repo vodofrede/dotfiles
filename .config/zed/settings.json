@@ -6,46 +6,37 @@
     "minimap": {
         "show": "never"
     },
-    "agent": {
-        "default_model": {
-            "provider": "zed.dev",
-            "model": "claude-sonnet-4-thinking"
-        },
-        "model_parameters": [],
-        "default_profile": "ask"
-    },
     "theme": {
         "mode": "system",
         "light": "Adwaita Pastel Light",
         "dark": "Adwaita Pastel Dark"
     },
-    "ui_font_size": 15,
-    "ui_font_family": "Adwaita Sans",
-    "buffer_font_size": 13,
-    "buffer_font_family": "JetBrains Mono",
-    "buffer_line_height": {
-        "custom": 1.2
-    },
+    "ui_font_size": 16,
+    "ui_font_family": "Adwaita Mono",
+    "buffer_font_size": 14,
+    "buffer_font_weight": 600,
+    "buffer_font_family": "Adwaita Mono",
+    "buffer_line_height": { "custom": 1.1 },
     // editor
     "tab_size": 4,
     "format_on_save": "on",
     "middle_click_paste": false,
+    "show_whitespaces": "trailing",
     "edit_predictions_disabled_in": ["comment", "string"],
-    "edit_predictions": {
-        "mode": "subtle"
-    },
+    "edit_predictions": { "mode": "subtle" },
+    "gutter": { "min_line_number_digits": 2, "folds": false },
+    "toolbar": { "breadcrumbs": false, "quick_actions": false },
     // plugins
+    "disable_ai": true,
+    "git": {
+        "inline_blame": { "enabled": false }
+    },
     "lsp": {
         "rust-analyzer": {
             "initialization_options": {
                 "check": {
                     "command": "clippy",
-                    "args": ["-W", "clippy::all", "clippy::pedantic"]
-                },
-                "cargo": {
-                    "buildScripts": {
-                        "enable": true
-                    }
+                    "args": ["-W", "clippy::all", "-W", "clippy::pedantic"]
                 }
             }
         }
